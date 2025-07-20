@@ -47,6 +47,12 @@
         HTML, CSS, JavaScript
         NumPy, librosa, OpenCV
         Git & GitHub for version control
+        
+🚀 **How to Use It**
+        Run this command to install your project:
+                pip install .
+                Or
+                python setup.py install
 
 🤝 **Contributing**
         Contributions welcome! Fork the repo → make changes in a new branch → submit a pull request.
