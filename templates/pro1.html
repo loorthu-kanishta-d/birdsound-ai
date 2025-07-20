@@ -1,0 +1,119 @@
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+    <!-- ===============================================-->
+    <!--    Document Title-->
+    <!-- ===============================================-->
+    <title>Speech Emotion </title>
+
+
+    <!-- ===============================================-->
+    <!--    Favicons-->
+    <!-- ===============================================-->
+    <link rel="apple-touch-icon" sizes="180x180" href="../static/assets/img/favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../static/assets/img/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../static/assets/img/favicons/favicon-16x16.png">
+    <link rel="shortcut icon" type="image/x-icon" href="../static/assets/img/favicons/favicon.ico">
+    <link rel="manifest" href="../static/assets/img/favicons/manifest.json">
+    <meta name="msapplication-TileImage" content="assets/img/favicons/mstile-150x150.png">
+    <meta name="theme-color" content="#ffffff">
+
+
+    <!-- ===============================================-->
+    <!--    Stylesheets-->
+    <!-- ===============================================-->
+    <link href="../static/assets/css/theme.css" rel="stylesheet" />
+
+  </head>
+
+
+  <body>
+
+   
+	<div class="row">
+	<div class="col-md-4">
+
+	<p>&nbsp;</p>
+
+	<audio controls>
+  <source src="a.ogg" type="audio/ogg">
+  <source src="static/dataset/{{fn}}" type="audio/wav">
+Your browser does not support the audio element.
+</audio>
+<br>
+	
+	</div>
+	<div class="col-md-8">
+
+	{% if act=="1" %}
+	
+	<img src="../static/graph/g1.png" width="600" height="420" class="img-fluid">
+		<script>
+//Using setTimeout to execute a function after 5 seconds.
+setTimeout(function () {
+   //Redirect with JavaScript
+   window.location.href= '/pro1?act=2';
+}, 5000);
+</script>
+	{% elif act=="2" %}
+	
+	<img src="../static/graph/g2.png" width="640" height="480" class="img-fluid">
+		<script>
+//Using setTimeout to execute a function after 5 seconds.
+setTimeout(function () {
+   //Redirect with JavaScript
+   window.location.href= '/pro1?act=3';
+}, 5000);
+</script>
+
+{% elif act=="3" %}
+	<img src="../static/graph/g3.png" width="640" height="480" class="img-fluid">
+		<script>
+//Using setTimeout to execute a function after 5 seconds.
+setTimeout(function () {
+   //Redirect with JavaScript
+   window.location.href= '/pro1?act=4';
+}, 5000);
+</script>
+
+{% elif act=="4" %}
+	
+	<img src="../static/graph/g4.png" width="640" height="480" class="img-fluid">
+		<script>
+//Using setTimeout to execute a function after 5 seconds.
+setTimeout(function () {
+   //Redirect with JavaScript
+   window.location.href= '/pro1?act=5';
+}, 5000);
+</script>
+{% elif act=="5" %}
+	
+	<img src="../static/graph/g5.png" width="640" height="480" class="img-fluid">
+		<script>
+//Using setTimeout to execute a function after 5 seconds.
+setTimeout(function () {
+   //Redirect with JavaScript
+   window.parent.location.href= '/add_data';
+}, 5000);
+</script>
+
+	{% endif %}
+	
+	</div>
+	</div>
+	
+	<p>&nbsp;</p>
+    <!-- ===============================================-->
+    <!--    JavaScripts-->
+    <!-- ===============================================-->
+    <script src="../static/vendors/@popperjs/popper.min.js"></script>
+    <script src="../static/vendors/bootstrap/bootstrap.min.js"></script>
+    <script src="../static/vendors/is/is.min.js"></script>
+    <script src="../static/assets/js/theme.js"></script>
+  </body>
+
+</html>
