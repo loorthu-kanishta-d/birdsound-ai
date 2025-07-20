@@ -8,7 +8,7 @@
                 📊 Spectrogram Conversion: Transforms audio into visual spectrograms for analysis
                 🧬 Feature Extraction: Uses models like OpenL3, YAMNet, or CNNs to extract audio features
                 🐤 Species Classification: Predicts bird species from sound using trained neural networks
-                🌐 Web Interface (optional): Interactive dashboard for uploading and analyzing bird calls
+                🌐 Web Interface : Interactive dashboard for uploading and analyzing bird calls
 
         🛠️ Technologies Used
                 Category	Tools & Libraries
